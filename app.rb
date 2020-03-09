@@ -25,6 +25,7 @@ end
 
 get "/" do
     puts events_table.all
+    # puts events_table.all
     @events = events_table.all.to_a
     view "events"
 end
